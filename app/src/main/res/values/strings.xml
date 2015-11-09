@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CustomViewDemos</string>
     <string name="action_settings">Settings</string>
+    <string name="foo">foo</string>
+    <string name="bar">bar</string>
+    <string name="always_shown">Always Shown</string>
 </resources>

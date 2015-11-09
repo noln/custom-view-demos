@@ -22,4 +22,33 @@
 
     </io.jammy.customviewdemos.Views.LinearLayoutWithTextBox>
 
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button_foo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/foo"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bar"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear"/>
+
+    </LinearLayout>
+
 </RelativeLayout>

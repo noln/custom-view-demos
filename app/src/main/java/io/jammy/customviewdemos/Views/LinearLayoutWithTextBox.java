@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import io.jammy.customviewdemos.R;
 
 
@@ -15,7 +17,8 @@ import io.jammy.customviewdemos.R;
  */
 public class LinearLayoutWithTextBox extends LinearLayout {
 
-    private TextView embeddedTextView;
+    @Bind(R.id.embedded_text_view)
+    TextView embeddedTextView;
 
     public LinearLayoutWithTextBox(Context context) {
 
@@ -33,11 +36,9 @@ public class LinearLayoutWithTextBox extends LinearLayout {
 
     private void init() {
 
-        LayoutInflater.from(getContext()).inflate(
-                R.layout.linear_layout_with_textview_layout, this);
+        LayoutInflater.from(getContext()).inflate(R.layout.linear_layout_with_textview_layout, this);
 
-        embeddedTextView = (TextView) findViewById(R.id.embedded_text_view);
-
+        ButterKnife.bind(this);
     }
 
     public void setEmbeddedTextViewText(String text) {
