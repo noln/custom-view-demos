@@ -43,5 +43,12 @@ public class LinearLayoutWithTextBox extends LinearLayout {
     public void setEmbeddedTextViewText(String text) {
 
         embeddedTextView.setText(text);
+
+        if (text.equals("")) {
+            embeddedTextView.setVisibility(GONE);
+        }
+        else {
+            embeddedTextView.setVisibility(VISIBLE);
+        }
     }
 }
