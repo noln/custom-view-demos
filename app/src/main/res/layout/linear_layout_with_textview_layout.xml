@@ -20,7 +20,7 @@
     <TextView
         android:text="@string/always_shown"
         android:gravity="center"
-        android:background="@drawable/rounded_corners_bg"
+        android:background="@drawable/rounded_corners_bg_red"
         android:layout_margin="40dp"
         android:padding="10dp"
         android:layout_gravity="center"
