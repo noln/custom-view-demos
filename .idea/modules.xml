@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StackOverflowDemos.iml" filepath="$PROJECT_DIR$/StackOverflowDemos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomViewDemos.iml" filepath="$PROJECT_DIR$/CustomViewDemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

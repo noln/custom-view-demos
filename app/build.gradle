@@ -7,7 +7,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "io.jammy.stackoverflowdemos"
+        applicationId "io.jammy.customviewdemos"
         minSdkVersion 8
         targetSdkVersion 23
         versionCode 1
