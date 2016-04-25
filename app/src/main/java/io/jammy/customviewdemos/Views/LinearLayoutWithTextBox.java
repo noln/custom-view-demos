@@ -17,39 +17,39 @@ import io.jammy.customviewdemos.R;
  */
 public class LinearLayoutWithTextBox extends LinearLayout {
 
-    @Bind(R.id.embedded_text_view)
-    TextView embeddedTextView;
+  @Bind(R.id.embedded_text_view)
+  TextView embeddedTextView;
 
-    public LinearLayoutWithTextBox(Context context) {
+  public LinearLayoutWithTextBox(Context context) {
 
-        super(context);
+    super(context);
 
-        init();
+    init();
+  }
+
+  public LinearLayoutWithTextBox(Context context, AttributeSet attrs) {
+
+    super(context, attrs);
+
+    init();
+  }
+
+  private void init() {
+
+    LayoutInflater.from(getContext()).inflate(R.layout.linear_layout_with_textview_layout, this);
+
+    ButterKnife.bind(this);
+  }
+
+  public void setEmbeddedTextViewText(String text) {
+
+    embeddedTextView.setText(text);
+
+    if (text.equals("")) {
+      embeddedTextView.setVisibility(GONE);
     }
-
-    public LinearLayoutWithTextBox(Context context, AttributeSet attrs) {
-
-        super(context, attrs);
-
-        init();
+    else {
+      embeddedTextView.setVisibility(VISIBLE);
     }
-
-    private void init() {
-
-        LayoutInflater.from(getContext()).inflate(R.layout.linear_layout_with_textview_layout, this);
-
-        ButterKnife.bind(this);
-    }
-
-    public void setEmbeddedTextViewText(String text) {
-
-        embeddedTextView.setText(text);
-
-        if (text.equals("")) {
-            embeddedTextView.setVisibility(GONE);
-        }
-        else {
-            embeddedTextView.setVisibility(VISIBLE);
-        }
-    }
+  }
 }

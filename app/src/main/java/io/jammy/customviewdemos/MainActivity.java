@@ -12,35 +12,35 @@ import io.jammy.customviewdemos.Views.LinearLayoutWithTextBox;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.custom_view)
-    LinearLayoutWithTextBox linearLayoutWithTextBox;
+  @Bind(R.id.custom_view)
+  LinearLayoutWithTextBox linearLayoutWithTextBox;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    ButterKnife.bind(this);
 
-        // Initial value
-        linearLayoutWithTextBox.setEmbeddedTextViewText("Blah!");
-    }
+    // Initial value
+    linearLayoutWithTextBox.setEmbeddedTextViewText("Blah!");
+  }
 
-    @OnClick(R.id.button_foo)
-    public void foo() {
+  @OnClick(R.id.button_foo)
+  public void foo() {
 
-        linearLayoutWithTextBox.setEmbeddedTextViewText("FOO!");
-    }
+    linearLayoutWithTextBox.setEmbeddedTextViewText("FOO!");
+  }
 
-    @OnClick(R.id.button_bar)
-    public void bar() {
+  @OnClick(R.id.button_bar)
+  public void bar() {
 
-        linearLayoutWithTextBox.setEmbeddedTextViewText("BAR!");
-    }
+    linearLayoutWithTextBox.setEmbeddedTextViewText("BAR!");
+  }
 
-    @OnClick(R.id.button_clear)
-    public void clear() {
+  @OnClick(R.id.button_clear)
+  public void clear() {
 
-        linearLayoutWithTextBox.setEmbeddedTextViewText("");
-    }
+    linearLayoutWithTextBox.setEmbeddedTextViewText("");
+  }
 }
